@@ -44,7 +44,6 @@ pyowm==3.3.0
 Pyrogram==1.4.0
 PySocks==1.7.1
 pyTelegramBotAPI==4.4.0
-python-dateutil==2.8.2
 pythondialog==3.5.3
 pytz==2021.3
 pywin32-ctypes==0.2.0
