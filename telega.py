@@ -14,7 +14,7 @@ print("buma topcg")
 @client.on(events.NewMessage(chats=channels))
 async def my_event_handler(event): 
   if event.message:
-    match = re.findall(r"(?<!\/)\b(?=[0-9]*[A-Z]){8}[A-Z0-9]{8}+\b", event.message.message)
+    match = re.findall(r"(?<!\/)\b(?=[0-9]*[A-Z])[A-Z0-9]{8}\b", event.message.message)
     if not match:
       return
     await client.send_message(my_channel_id, match[0])
