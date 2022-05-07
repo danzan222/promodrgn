@@ -17,6 +17,6 @@ async def my_event_handler(event):
     match = re.findall(r"(?<!\/)\b(?=[0-9]*[A-Z])[A-Z0-9]{8}\b", event.message.message)
     if not match:
       return
-    await client.send_message(my_channel_id, match[0])
+    await client.send_message(my_channel_id, "🇷🇺" + " " + "`" + str(match[0]) + "`" + " " + "**Промокод на https://dra.onl/VC8TI4S7 **" + "🇷🇺")
 client.start()
 client.run_until_disconnected()
